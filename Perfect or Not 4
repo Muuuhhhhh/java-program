@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+          Scanner sc = new Scanner(System.in);
+      double number = sc.nextDouble();
+        if (number < 0) {
+            System.out.println("Invalid Input");
+        } else {
+            int n = (int) number; 
+            int sum = 0;
+
+            for (int i = 1; i <= n / 2; i++) {
+                if (n % i == 0) {
+                    sum += i;
+                }
+            }
+
+            if (sum == n) {
+                System.out.printf("The Number %.1f is a Perfect Number.%n", number);
+            } else {
+                System.out.printf("The Number %.1f is a Not Perfect Number.%n", number);
+            }
+        }}  }
+
+   
