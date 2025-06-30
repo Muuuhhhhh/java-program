@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+      String s=sc.nextLine().toLowerCase();
+      String goal=sc.nextLine().toLowerCase();
+       int l1=s.length(),l2=goal.length();
+        
+        if(l1<1 || l2>100 || l1!=l2){
+            System.out.println("false");
+        }
+        else{
+            String str=s+s;
+            if(str.contains(goal)){
+               System.out.println("true");
+            }
+            else{
+                 System.out.println("false");
+            }
+        }
+        
+    }
+}
